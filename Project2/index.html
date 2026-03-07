@@ -150,12 +150,12 @@
     </p>
 
     <div class="img-box">
-      <img src="images/rnn_hidden_size.png" alt="RNN hidden size experiment graph">
+      <img src="images/hidden.png" alt="RNN hidden size experiment graph">
       <div class="caption">Figure 1. RNN hidden size tuning results.</div>
     </div>
 
     <p>
-      The best-performing hidden size was <strong>[fill in best hidden size]</strong>. Smaller hidden sizes were more stable,
+      The best-performing hidden size was <strong>[16]</strong>. Smaller hidden sizes were more stable,
       while larger hidden sizes sometimes reduced training perplexity more aggressively without improving validation perplexity.
       This suggests that increasing model capacity alone does not guarantee better generalization.
     </p>
@@ -167,12 +167,12 @@
     </p>
 
     <div class="img-box">
-      <img src="images/rnn_num_steps.png" alt="RNN number of time steps experiment graph">
+      <img src="images/num_steps.png" alt="RNN number of time steps experiment graph">
       <div class="caption">Figure 2. RNN number of time steps tuning results.</div>
     </div>
 
     <p>
-      The best-performing number of time steps was <strong>[fill in best value]</strong>. Larger sequence lengths provided more
+      The best-performing number of time steps was <strong>[16]</strong>. Larger sequence lengths provided more
       context, but they also made training harder and sometimes less stable. Shorter sequence lengths were easier to optimize,
       but they limited the amount of context available to the model.
     </p>
@@ -184,12 +184,12 @@
     </p>
 
     <div class="img-box">
-      <img src="images/rnn_learning_rate.png" alt="RNN learning rate experiment graph">
+      <img src="images/lr.png" alt="RNN learning rate experiment graph">
       <div class="caption">Figure 3. RNN learning rate tuning results.</div>
     </div>
 
     <p>
-      The best learning rate was <strong>[fill in best learning rate]</strong>. Smaller learning rates trained more smoothly,
+      The best learning rate was <strong>[0.5]</strong>. Smaller learning rates trained more smoothly,
       while larger learning rates sometimes caused noisier validation behavior. This shows that optimization stability is an
       important part of RNN performance.
     </p>
@@ -200,7 +200,7 @@
     </p>
 
     <div class="img-box">
-      <img src="images/rnn_epochs.png" alt="RNN epochs experiment graph">
+      <img src="images/epochs.png" alt="RNN epochs experiment graph">
       <div class="caption">Figure 4. RNN epochs experiment results.</div>
     </div>
 
@@ -209,12 +209,6 @@
       smaller improvements and more fluctuations. This suggests diminishing returns and possible overfitting after longer training.
     </p>
 
-    <div class="summary-box">
-      <strong>Task 1 Summary:</strong>
-      The best-performing basic RNN configuration among my experiments was
-      <strong>[fill in best overall configuration]</strong>, which achieved the lowest validation perplexity of
-      <strong>[fill in value]</strong>.
-    </div>
 
     <h3>Task 2: Gradient Clipping and Activation Function</h3>
     <p>
@@ -257,7 +251,7 @@
 
     <h3>Quick GRU Sanity Check</h3>
     <div class="img-box">
-      <img src="images/gru_quick_test.png" alt="Quick GRU test graph">
+      <img src="images/test.png" alt="Quick GRU test graph">
       <div class="caption">Figure 7. Quick GRU test used to verify that the implementation was working correctly.</div>
     </div>
 
@@ -268,7 +262,7 @@
 
     <h3>GRU Hidden Size Experiment</h3>
     <div class="img-box">
-      <img src="images/gru_hidden_size.png" alt="GRU hidden size experiment graph">
+      <img src="images/gru_hidden.png" alt="GRU hidden size experiment graph">
       <div class="caption">Figure 8. GRU hidden size tuning results.</div>
     </div>
 
@@ -281,7 +275,7 @@
 
     <h3>GRU Learning Rate Experiment</h3>
     <div class="img-box">
-      <img src="images/gru_learning_rate.png" alt="GRU learning rate experiment graph">
+      <img src="images/gru_lr.png" alt="GRU learning rate experiment graph">
       <div class="caption">Figure 9. GRU learning rate tuning results.</div>
     </div>
 
@@ -306,19 +300,19 @@
 
     <h3>Full GRU</h3>
     <div class="img-box">
-      <img src="images/gru_full.png" alt="Full GRU graph">
+      <img src="images/full_GRU.png" alt="Full GRU graph">
       <div class="caption">Figure 10. Full GRU baseline.</div>
     </div>
 
     <h3>Only Reset Gate Active</h3>
     <div class="img-box">
-      <img src="images/gru_reset_only.png" alt="Reset-only GRU graph">
+      <img src="images/only_reset.png" alt="Reset-only GRU graph">
       <div class="caption">Figure 11. GRU with only the reset gate active.</div>
     </div>
 
     <h3>Only Update Gate Active</h3>
     <div class="img-box">
-      <img src="images/gru_update_only.png" alt="Update-only GRU graph">
+      <img src="images/only_update.png" alt="Update-only GRU graph">
       <div class="caption">Figure 12. GRU with only the update gate active.</div>
     </div>
 
