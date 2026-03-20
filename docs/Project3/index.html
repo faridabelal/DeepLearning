@@ -141,7 +141,7 @@
         <td>128</td>
         <td>0.1</td>
         <td>0.001</td>
-        <td>PUT_YOUR_VALUE</td>
+        <td>0.3845</td>
       </tr>
       <tr>
         <td>config_2</td>
@@ -149,7 +149,7 @@
         <td>256</td>
         <td>0.2</td>
         <td>0.001</td>
-        <td>PUT_YOUR_VALUE</td>
+        <td>0.4876</td>
       </tr>
       <tr>
         <td>config_3</td>
@@ -157,7 +157,7 @@
         <td>256</td>
         <td>0.3</td>
         <td>0.0005</td>
-        <td>PUT_YOUR_VALUE</td>
+        <td>0.3746</td>
       </tr>
       <tr>
         <td>config_4</td>
@@ -165,22 +165,22 @@
         <td>256</td>
         <td>0.2</td>
         <td>0.001</td>
-        <td>PUT_YOUR_VALUE</td>
+        <td>0.3648</td>
       </tr>
     </table>
 
     <div class="figure">
-      <img src="images/part1_loss_top1.png" alt="Part 1 top configuration loss curve">
+      <img src="images/top1.png" alt="Part 1 top configuration loss curve">
       <div class="caption">Figure 1. Training and validation loss for one of the best-performing Part 1 configurations.</div>
     </div>
 
     <div class="figure">
-      <img src="images/part1_loss_top2.png" alt="Part 1 second best loss curve">
+      <img src="images/top2.png" alt="Part 1 second best loss curve">
       <div class="caption">Figure 2. Training and validation loss for another strong Part 1 configuration.</div>
     </div>
 
     <div class="figure">
-      <img src="images/part1_loss_top3.png" alt="Part 1 third best loss curve">
+      <img src="images/top3.png" alt="Part 1 third best loss curve">
       <div class="caption">Figure 3. Training and validation loss for a third top-performing Part 1 configuration.</div>
     </div>
 
@@ -199,12 +199,12 @@
     </p>
 
     <div class="figure">
-      <img src="images/part1_attention_1.png" alt="Part 1 attention heatmap example 1">
+      <img src="images/heatmap1.png" alt="Part 1 attention heatmap example 1">
       <div class="caption">Figure 4. Attention heatmap for a translated sentence pair from Part 1.</div>
     </div>
 
     <div class="figure">
-      <img src="images/part1_attention_2.png" alt="Part 1 attention heatmap example 2">
+      <img src="images/heatmap2.png" alt="Part 1 attention heatmap example 2">
       <div class="caption">Figure 5. Attention heatmap for another translated sentence pair from Part 1.</div>
     </div>
 
@@ -238,32 +238,32 @@
       <tr>
         <td>heads_1</td>
         <td>1</td>
-        <td>PUT_YOUR_VALUE</td>
+        <td>0.4356</td>
       </tr>
       <tr>
         <td>heads_2</td>
         <td>2</td>
-        <td>PUT_YOUR_VALUE</td>
+        <td>0.4479</td>
       </tr>
       <tr>
         <td>heads_4</td>
         <td>4</td>
-        <td>PUT_YOUR_VALUE</td>
+        <td>0.4525</td>
       </tr>
       <tr>
         <td>heads_8</td>
         <td>8</td>
-        <td>PUT_YOUR_VALUE</td>
+        <td>0.3830</td>
       </tr>
     </table>
 
     <div class="figure">
-      <img src="images/part2_heads_1_loss.png" alt="Loss curve for 1 head">
+      <img src="images/heads1.png" alt="Loss curve for 1 head">
       <div class="caption">Figure 6. Training and validation loss for the 1-head model.</div>
     </div>
 
     <div class="figure">
-      <img src="images/part2_heads_4_loss.png" alt="Loss curve for 4 heads">
+      <img src="images/heads4.png" alt="Loss curve for 4 heads">
       <div class="caption">Figure 7. Training and validation loss for the 4-head model.</div>
     </div>
 
@@ -280,12 +280,12 @@
     </p>
 
     <div class="figure">
-      <img src="images/part2_example1_head1.png" alt="Part 2 head 1 heatmap">
+      <img src="images/perhead1.png" alt="Part 2 head 1 heatmap">
       <div class="caption">Figure 8. Per-head attention visualization for one example.</div>
     </div>
 
     <div class="figure">
-      <img src="images/part2_example1_head2.png" alt="Part 2 head 2 heatmap">
+      <img src="images/perhead2.png" alt="Part 2 head 2 heatmap">
       <div class="caption">Figure 9. Another head from the same example, showing a different attention pattern.</div>
     </div>
 
@@ -311,13 +311,13 @@
       </tr>
       <tr>
         <td>Seq2Seq + Additive Attention</td>
-        <td>PUT_BEST_PART1_CONFIG</td>
-        <td>PUT_YOUR_VALUE</td>
+        <td>CONFIG 2</td>
+        <td>0.4876</td>
       </tr>
       <tr>
         <td>Seq2Seq + Multi-Head Attention</td>
-        <td>PUT_BEST_PART2_CONFIG</td>
-        <td>PUT_YOUR_VALUE</td>
+        <td>HEADS_4</td>
+        <td>0.4525</td>
       </tr>
     </table>
   </div>
